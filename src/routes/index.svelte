@@ -16,7 +16,7 @@ onMount(async () => {
 </script>
 
 <svelte:head>
-	<title>Pantone Colors</title>
+	<title>Display P3 exclusive Pantone colors</title>
 </svelte:head>
 
 <h1 class="text-3xl mt-8 mb-2">Named Display P3 exclusive Pantone colors</h1>
