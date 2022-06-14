@@ -10,8 +10,8 @@
 	const workingName = name ?? code;
 </script>
 
-<div class="flex flex-col w-32">
-	<img {src} alt={workingName} class="w-32 h-32 mb-1.5" />
+<div class="flex flex-col w-1/2 sm:w-1/3 md:w-36 px-2">
+	<img {src} alt={workingName} class="w-full mb-1.5" />
 
 	{#if name}
 		<p class="text-lg font-medium leading-tight mb-1">{name}</p>

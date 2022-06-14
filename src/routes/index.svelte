@@ -27,7 +27,7 @@ onMount(async () => {
 {/if}
 </p>
 
-<section class="flex flex-wrap gap-2 gap-y-6 justify-between">
+<section class="flex flex-wrap gap-y-6 justify-between -mx-2">
 	{#each colors.filter(color => color.gamut === "p3") as color}
 		<Chip name={color.name} code={color.code} p3={color.p3Short} hex={color.hex} />
 	{/each}
