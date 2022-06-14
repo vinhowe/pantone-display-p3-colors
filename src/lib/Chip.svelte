@@ -8,16 +8,22 @@
 
 	const src = buildPng(...p3);
 	const workingName = name ?? code;
+    const codeId = code.toLowerCase().replaceAll(' ', '-');
 </script>
 
-<div class="flex flex-col w-1/2 sm:w-1/3 md:w-36 px-2">
-	<img {src} alt={workingName} class="w-full mb-1.5" />
+<a href="#{codeId}">
+	<div
+		class="flex flex-col w-1/2 sm:w-1/3 md:w-36 px-2"
+		id={codeId}
+	>
+		<img {src} alt={workingName} class="w-full mb-1.5" />
 
-	{#if name}
-		<p class="text-lg font-medium leading-tight mb-1">{name}</p>
-	{/if}
+		{#if name}
+			<p class="text-lg font-medium leading-tight mb-1">{name}</p>
+		{/if}
 
-	<p class="text-sm opacity-50 font-mono">{code}</p>
+		<p class="text-sm opacity-50 font-mono">{code}</p>
 
-    <p class="text-sm opacity-50 font-mono italic">#{hex}</p>
-</div>
+		<p class="text-sm opacity-50 font-mono italic">#{hex}</p>
+	</div>
+</a>
